@@ -1,0 +1,17 @@
+{
+  "name": "error_handler",
+  "version": "1.0.0",
+  "description": "A package to reform error with a custom inbuild error class. Handle reformed error with a event listener.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "error",
+    "reform",
+    "node",
+    "kafka"
+  ],
+  "author": "abhishek asarawa",
+  "license": "ISC"
+}
