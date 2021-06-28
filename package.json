@@ -1,10 +1,15 @@
 {
   "name": "error_handler",
   "version": "1.0.0",
-  "description": "A package to reform error with a custom inbuild error class. Handle reformed error with a event listener.",
-  "main": "index.js",
+  "description": "A package to reform error with a custom in-build error class. Handle reformed error with a event listener.",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "error",
@@ -13,5 +18,18 @@
     "kafka"
   ],
   "author": "abhishek asarawa",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "pino": "^6.11.3"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.170",
+    "@types/pino": "^6.3.8",
+    "typescript": "^4.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishek-asarawa/error_handler.git"
+  }
 }
