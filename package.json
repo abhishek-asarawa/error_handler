@@ -1,5 +1,5 @@
 {
-  "name": "error_handler",
+  "name": "error_transformer",
   "version": "1.0.0",
   "description": "A package to reform error with a custom in-build error class. Handle reformed error with a event listener.",
   "main": "./lib/cjs/index.js",
